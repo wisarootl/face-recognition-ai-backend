@@ -18,7 +18,7 @@ const db = knex({
     // user: 'postgres',
     // password: '12345687',
     // database: 'smart-brain'
-    host: process.env.DATABASE_URL,
+    connectionString: process.env.DATABASE_URL,
     ssl: {
       rejectUnauthorized: false
     }
